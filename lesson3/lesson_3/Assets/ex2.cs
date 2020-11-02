@@ -6,16 +6,12 @@ using UnityEngine.Playables;
 public class ex2 : MonoBehaviour
 {
     public float speed = 5.0f;
-    private bool dirRight;
-    private bool dirUp;
     private Quaternion targetRotation;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        dirRight = true;
-        dirUp = true;
         rb.isKinematic = true;
     }
 
